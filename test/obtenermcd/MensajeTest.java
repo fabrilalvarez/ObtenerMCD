@@ -11,9 +11,9 @@ import static org.junit.Assert.*;
  *
  * @author @FranJAbrilA <ffrannabril@gmail.com>
  */
-public class CalculoTest {
+public class MensajeTest {
 
-    public CalculoTest() {
+    public MensajeTest() {
     }
 
     @BeforeClass
@@ -37,15 +37,15 @@ public class CalculoTest {
      */
     @Test
     public void testObtenerMCD() {
-        int num1 = 10;//Primer numero
-        int num2 = 50;//Segundo numero
+        int num1 = 15;
+        int num2 = 5;
         Calculo instance = new Calculo();
-        int expResult = 10;//Resultado esperado
+        int expResult = 5;
         int result = instance.obtenerMCD(num1, num2);
         assertEquals(expResult, result);
-        System.out.println("Calculo de metodo obtenerMCD: " + expResult);
+        System.out.println("Mensaje: " + instance.getMensajeResultado() + " " + expResult);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
 }

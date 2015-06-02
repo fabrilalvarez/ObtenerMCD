@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class PruebaTest {
+public class ParamTest {
 
     private int num1, num2;
     private float resultado;
@@ -24,7 +24,7 @@ public class PruebaTest {
     // Each parameter should be placed as an argument here
     // Every time runner triggers, it will pass the arguments
     // from parameters we defined in primeNumbers() method
-    public PruebaTest(int numeroA, int numeroB, int result) {
+    public ParamTest(int numeroA, int numeroB, int result) {
         this.num1 = numeroA;
         this.num2 = numeroB;
         this.resultado = result;
@@ -42,7 +42,7 @@ public class PruebaTest {
     // This test will run 4 times since we have 5 parameters defined
     @Test
     public void testPrimeNumberChecker() {
-        System.out.println("Parameterized is : " + resultado);
+        System.out.println("Test parametrizado: " + resultado);
         assertEquals(resultado, primeNumberChecker.obtenerMCD(num1, num2), 0);
     }
 }

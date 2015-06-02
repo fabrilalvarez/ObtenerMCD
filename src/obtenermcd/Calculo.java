@@ -1,8 +1,12 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package obtenermcd;
-
 /**
  *
- * @author @FranJAbrilA <ffrannabril@gmail.com>
+ * @author damian
  */
 public class Calculo {
 
@@ -53,11 +57,9 @@ public class Calculo {
         int resto;
         int numDiv1 = num1;
         int numDiv2 = num2;
-
-        if (num1 < 0 || num2 < 0) {
-            return 0;
-        }
-
+        
+        if (num1 <0 || num2 < 0) return 0;
+       
         try {
             do {
                 resto = numDiv1 % numDiv2;
