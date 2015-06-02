@@ -36,6 +36,21 @@ public class MensajeTest {
      * Test of obtenerMCD method, of class Calculo.
      */
     @Test
+    public void testSetNum1() {
+        int num1 = -15;
+        Calculo instance = new Calculo();
+        String expResult = "Error, los números no pueden ser negativos";
+        String result = instance.setNumero1(num1);
+        assertEquals(expResult, result);
+        System.out.println("Validar entrada de dato");
+        // TODO review the generated test code and remove the default call to fail.
+        // fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of obtenerMCD method, of class Calculo.
+     */
+    @Test
     public void testObtenerMCD() {
         int num1 = 15;
         int num2 = 5;

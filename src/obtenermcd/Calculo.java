@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package obtenermcd;
+
 /**
  *
  * @author damian
@@ -18,12 +14,14 @@ public class Calculo {
     }
 
     //setters
-    public void setNumero1(int numero) {
+    public String setNumero1(int numero) {
         this.numero1 = numero;
         //si el número es negativo cambiamos a cero y
         //establecemos la propiedad "mensajeResultado" a "Error"
         if (numero < 0) {
-            mensajeResultado = "Error, los números no pueden ser negativos";
+            return mensajeResultado = "Error, los números no pueden ser negativos";
+        } else {
+            return null;
         }
     }
 
@@ -57,9 +55,11 @@ public class Calculo {
         int resto;
         int numDiv1 = num1;
         int numDiv2 = num2;
-        
-        if (num1 <0 || num2 < 0) return 0;
-       
+
+        if (num1 < 0 || num2 < 0) {
+            return 0;
+        }
+
         try {
             do {
                 resto = numDiv1 % numDiv2;
